@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gestión de Clientes"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Botón para agregar nuevo cliente -->
+    <Button
+        android:id="@+id/btnNuevoCliente"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="NUEVO CLIENTE"
+        android:background="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Barra de búsqueda -->
+    <EditText
+        android:id="@+id/etBuscarCliente"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Buscar cliente por nombre o teléfono..."
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Lista de clientes -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clientes Registrados:"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
+
+    <ListView
+        android:id="@+id/listViewClientes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Botón para volver al menú principal -->
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="VOLVER AL MENÚ"
+        android:background="#9E9E9E"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Mezquite</string>
+    <string-array name="unidades_array">
+        <item>kg</item>
+        <item>pieza</item>
+        <item>litro</item>
+        <item>porción</item>
+        <item>plato</item>
+    </string-array>
+
+    <string-array name="unidades_materia_array">
+        <item>kg</item>
+        <item>gramos</item>
+        <item>litros</item>
+        <item>piezas</item>
+        <item>cajas</item>
+        <item>paquetes</item>
+        <item>latas</item>
+    </string-array>
+</resources>

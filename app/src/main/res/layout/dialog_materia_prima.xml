@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvTituloDialogMateria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nueva Materia Prima"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Nombre -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre *"/>
+
+        <EditText
+            android:id="@+id/etNombreMateria"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Ej: Mojarra Fresca"
+            android:padding="10dp"
+            android:layout_marginBottom="15dp"/>
+
+        <!-- Proveedor -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Proveedor"/>
+
+        <Spinner
+            android:id="@+id/spinnerProveedor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"/>
+
+        <!-- Precio de compra -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Precio de compra *"/>
+
+        <EditText
+            android:id="@+id/etPrecioCompra"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Ej: 85.00"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:layout_marginBottom="15dp"/>
+
+        <!-- Unidad de medida -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unidad de medida *"/>
+
+        <Spinner
+            android:id="@+id/spinnerUnidadMateria"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"/>
+
+        <!-- Stock actual -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stock actual *"/>
+
+        <EditText
+            android:id="@+id/etStockActual"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Ej: 50.0"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:layout_marginBottom="15dp"/>
+
+        <!-- Stock mínimo -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stock mínimo *"/>
+
+        <EditText
+            android:id="@+id/etStockMinimo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Ej: 10.0"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Botones -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnCancelarMateria"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="CANCELAR"
+                android:background="#F44336"
+                android:textColor="#FFFFFF"
+                android:layout_marginRight="5dp"/>
+
+            <Button
+                android:id="@+id/btnGuardarMateria"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="GUARDAR"
+                android:background="#4CAF50"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

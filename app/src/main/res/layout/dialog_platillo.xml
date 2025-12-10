@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvTituloDialogPlatillo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nuevo Platillo"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Nombre -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre del platillo *"/>
+
+        <EditText
+            android:id="@+id/etNombrePlatillo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Ej: Mojarra Preparada"
+            android:padding="10dp"
+            android:layout_marginBottom="15dp"/>
+
+        <!-- Categoría -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categoría"/>
+
+        <Spinner
+            android:id="@+id/spinnerCategoria"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"/>
+
+        <!-- Precio -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Precio *"/>
+
+        <EditText
+            android:id="@+id/etPrecioPlatillo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Ej: 180.00"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:layout_marginBottom="15dp"/>
+
+        <!-- Unidad de medida -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unidad de medida *"/>
+
+        <Spinner
+            android:id="@+id/spinnerUnidad"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Botones -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnCancelarPlatillo"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="CANCELAR"
+                android:background="#F44336"
+                android:textColor="#FFFFFF"
+                android:layout_marginRight="5dp"/>
+
+            <Button
+                android:id="@+id/btnGuardarPlatillo"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="GUARDAR"
+                android:background="#4CAF50"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvTituloDialogProveedor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nuevo Proveedor"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Nombre del proveedor -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre del proveedor *"/>
+
+        <EditText
+            android:id="@+id/etNombreProveedor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Ej: Pescados del Mar S.A."
+            android:padding="10dp"
+            android:layout_marginBottom="15dp"/>
+
+        <!-- Contacto -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Persona de contacto"/>
+
+        <EditText
+            android:id="@+id/etContactoProveedor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Ej: Juan Pérez"
+            android:padding="10dp"
+            android:layout_marginBottom="15dp"/>
+
+        <!-- Teléfono -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teléfono *"/>
+
+        <EditText
+            android:id="@+id/etTelefonoProveedor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Ej: 5551234567"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:layout_marginBottom="15dp"/>
+
+        <!-- Email -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"/>
+
+        <EditText
+            android:id="@+id/etEmailProveedor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Ej: proveedor@email.com"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:layout_marginBottom="15dp"/>
+
+        <!-- Dirección -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dirección"/>
+
+        <EditText
+            android:id="@+id/etDireccionProveedor"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:hint="Ej: Calle Principal #123, Col. Centro"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:gravity="top"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Botones -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnCancelarProveedor"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="CANCELAR"
+                android:background="#F44336"
+                android:textColor="#FFFFFF"
+                android:layout_marginRight="5dp"/>
+
+            <Button
+                android:id="@+id/btnGuardarProveedor"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="GUARDAR"
+                android:background="#4CAF50"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
